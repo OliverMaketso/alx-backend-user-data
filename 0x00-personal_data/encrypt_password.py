@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-hash_password returns a salted, hashed password, byte in string 
+hash_password returns a salted, hashed password, byte in string
 """
 import bcrypt
 
