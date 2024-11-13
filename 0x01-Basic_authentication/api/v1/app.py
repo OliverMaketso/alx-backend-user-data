@@ -21,6 +21,10 @@ if AUTH_TYPE == "Auth":
     from api.v1.auth.auth import Auth
     auth = Auth()
 
+elif AUTH_TYPE == "basic_auth":
+    from api.v1.auth.basic_auth import BasicAuth
+    auth = BasicAuth()
+
 excluded_paths = ['/api/v1/status/', '/api/v1/unauthorized/',
                   '/api/v1/forbidden/']
 
@@ -43,7 +47,7 @@ def unauthorized_error(error) -> str:
 def forbidden_error(error) -> str:
     """Forbidden error handler
     """
-    return jsonify({"error": "Forbidden"})
+    return jsonify({"error": "Forbidden"}), 403
 
 @app.before_request
 def before_request():
