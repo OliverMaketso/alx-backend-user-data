@@ -1,0 +1,264 @@
+README.md:3:34: W604 backticks are deprecated, use 'repr()'
+README.md:6:1: E266 too many leading '#' for block comment
+README.md:8:1: E266 too many leading '#' for block comment
+README.md:10:3: W604 backticks are deprecated, use 'repr()'
+README.md:11:3: W604 backticks are deprecated, use 'repr()'
+README.md:13:1: E266 too many leading '#' for block comment
+README.md:15:3: W604 backticks are deprecated, use 'repr()'
+README.md:16:3: W604 backticks are deprecated, use 'repr()'
+README.md:16:51: E225 missing whitespace around operator
+README.md:17:3: W604 backticks are deprecated, use 'repr()'
+README.md:20:1: E266 too many leading '#' for block comment
+README.md:22:1: W604 backticks are deprecated, use 'repr()'
+README.md:23:17: E225 missing whitespace around operator
+README.md:24:1: W604 backticks are deprecated, use 'repr()'
+README.md:27:1: E266 too many leading '#' for block comment
+README.md:29:1: W604 backticks are deprecated, use 'repr()'
+README.md:30:11: E225 missing whitespace around operator
+README.md:30:28: E225 missing whitespace around operator
+README.md:30:43: E225 missing whitespace around operator
+README.md:31:1: W604 backticks are deprecated, use 'repr()'
+README.md:34:1: E266 too many leading '#' for block comment
+README.md:36:3: W604 backticks are deprecated, use 'repr()'
+README.md:36:9: E225 missing whitespace around operator
+README.md:37:3: W604 backticks are deprecated, use 'repr()'
+README.md:37:9: E225 missing whitespace around operator
+README.md:38:3: W604 backticks are deprecated, use 'repr()'
+README.md:38:9: E225 missing whitespace around operator
+README.md:39:3: W604 backticks are deprecated, use 'repr()'
+README.md:39:9: E225 missing whitespace around operator
+README.md:39:22: E231 missing whitespace after ':'
+README.md:40:3: W604 backticks are deprecated, use 'repr()'
+README.md:40:12: E225 missing whitespace around operator
+README.md:40:25: E231 missing whitespace after ':'
+README.md:41:3: W604 backticks are deprecated, use 'repr()'
+README.md:41:10: E225 missing whitespace around operator
+README.md:41:43: E211 whitespace before '('
+README.md:41:80: E501 line too long (133 > 79 characters)
+README.md:42:3: W604 backticks are deprecated, use 'repr()'
+README.md:42:9: E225 missing whitespace around operator
+README.md:42:22: E231 missing whitespace after ':'
+README.md:42:59: E211 whitespace before '('
+README.md:42:80: E501 line too long (106 > 79 characters)
+api/v1/app.py:52:1: E302 expected 2 blank lines, found 1
+api/v1/app.py:55:80: E501 line too long (88 > 79 characters)
+api/v1/app.py:81:1: E303 too many blank lines (3)
+api/v1/views/__init__.py:8:1: E402 module level import not at top of file
+api/v1/views/__init__.py:9:1: E402 module level import not at top of file
+api/v1/views/index.py:29:65: E251 unexpected spaces around keyword / parameter equals
+api/v1/views/index.py:40:62: E251 unexpected spaces around keyword / parameter equals
+api/v1/auth/auth.py:41:1: W293 blank line contains whitespace
+api/v1/auth/auth.py:44:1: W293 blank line contains whitespace
+api/v1/auth/auth.py:46:1: W293 blank line contains whitespace
+api/v1/auth/auth.py:48:5: E303 too many blank lines (2)
+api/v1/auth/auth.py:54:1: W293 blank line contains whitespace
+api/v1/auth/auth.py:54:1: W391 blank line at end of file
+api/v1/auth/basic_auth.py:14:80: E501 line too long (84 > 79 characters)
+api/v1/auth/basic_auth.py:22:80: E501 line too long (81 > 79 characters)
+api/v1/auth/basic_auth.py:26:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:29:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:31:19: E271 multiple spaces after keyword
+api/v1/auth/basic_auth.py:32:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:34:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:35:80: E501 line too long (90 > 79 characters)
+api/v1/auth/basic_auth.py:38:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:43:80: E501 line too long (88 > 79 characters)
+api/v1/auth/basic_auth.py:47:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:50:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:55:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:60:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:61:80: E501 line too long (95 > 79 characters)
+api/v1/auth/basic_auth.py:63:80: E501 line too long (85 > 79 characters)
+api/v1/auth/basic_auth.py:67:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:70:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:73:1: W293 blank line contains whitespace
+api/v1/auth/basic_auth.py:76:1: W293 blank line contains whitespace
+main_01.py:11:1: W293 blank line contains whitespace
+main_1.py:15:1: W391 blank line at end of file
+main_3.py:13:80: E501 line too long (116 > 79 characters)
+main_6.py:18:80: E501 line too long (95 > 79 characters)
+models/base.py:129:9: E306 expected 1 blank line before a nested definition, found 0
+models/base.py:136:1: W293 blank line contains whitespace
+py:1:10: E231 missing whitespace after ':'
+py:1:12: E231 missing whitespace after ':'
+py:2:10: E231 missing whitespace after ':'
+py:2:12: E231 missing whitespace after ':'
+py:3:10: E231 missing whitespace after ':'
+py:3:12: E231 missing whitespace after ':'
+py:4:10: E231 missing whitespace after ':'
+py:4:13: E231 missing whitespace after ':'
+py:5:10: E231 missing whitespace after ':'
+py:5:13: E231 missing whitespace after ':'
+py:6:10: E231 missing whitespace after ':'
+py:6:13: E231 missing whitespace after ':'
+py:7:10: E231 missing whitespace after ':'
+py:7:13: E231 missing whitespace after ':'
+py:8:10: E231 missing whitespace after ':'
+py:8:13: E231 missing whitespace after ':'
+py:9:10: E231 missing whitespace after ':'
+py:9:13: E231 missing whitespace after ':'
+py:10:10: E231 missing whitespace after ':'
+py:10:13: E231 missing whitespace after ':'
+py:11:10: E231 missing whitespace after ':'
+py:11:13: E231 missing whitespace after ':'
+py:12:10: E231 missing whitespace after ':'
+py:12:13: E231 missing whitespace after ':'
+py:13:10: E231 missing whitespace after ':'
+py:13:13: E231 missing whitespace after ':'
+py:14:10: E231 missing whitespace after ':'
+py:14:13: E231 missing whitespace after ':'
+py:15:10: E231 missing whitespace after ':'
+py:15:13: E231 missing whitespace after ':'
+py:16:10: E231 missing whitespace after ':'
+py:16:13: E231 missing whitespace after ':'
+py:17:10: E231 missing whitespace after ':'
+py:17:13: E231 missing whitespace after ':'
+py:18:10: E231 missing whitespace after ':'
+py:18:13: E231 missing whitespace after ':'
+py:19:10: E231 missing whitespace after ':'
+py:19:13: E231 missing whitespace after ':'
+py:20:10: E231 missing whitespace after ':'
+py:20:13: E231 missing whitespace after ':'
+py:21:10: E231 missing whitespace after ':'
+py:21:13: E231 missing whitespace after ':'
+py:22:10: E231 missing whitespace after ':'
+py:22:13: E231 missing whitespace after ':'
+py:23:10: E231 missing whitespace after ':'
+py:23:13: E231 missing whitespace after ':'
+py:24:10: E231 missing whitespace after ':'
+py:24:13: E231 missing whitespace after ':'
+py:25:10: E231 missing whitespace after ':'
+py:25:13: E231 missing whitespace after ':'
+py:26:10: E231 missing whitespace after ':'
+py:26:13: E231 missing whitespace after ':'
+py:27:10: E231 missing whitespace after ':'
+py:27:13: E231 missing whitespace after ':'
+py:28:10: E231 missing whitespace after ':'
+py:28:13: E231 missing whitespace after ':'
+py:29:10: E231 missing whitespace after ':'
+py:29:13: E231 missing whitespace after ':'
+py:30:10: E231 missing whitespace after ':'
+py:30:13: E231 missing whitespace after ':'
+py:31:10: E231 missing whitespace after ':'
+py:31:13: E231 missing whitespace after ':'
+py:32:10: E231 missing whitespace after ':'
+py:32:13: E231 missing whitespace after ':'
+py:33:10: E231 missing whitespace after ':'
+py:33:13: E231 missing whitespace after ':'
+py:34:10: E231 missing whitespace after ':'
+py:34:13: E231 missing whitespace after ':'
+py:35:10: E231 missing whitespace after ':'
+py:35:13: E231 missing whitespace after ':'
+py:36:10: E231 missing whitespace after ':'
+py:36:13: E231 missing whitespace after ':'
+py:37:10: E231 missing whitespace after ':'
+py:37:13: E231 missing whitespace after ':'
+py:37:36: E211 whitespace before '('
+py:38:10: E231 missing whitespace after ':'
+py:38:13: E231 missing whitespace after ':'
+py:39:10: E231 missing whitespace after ':'
+py:39:13: E231 missing whitespace after ':'
+py:40:10: E231 missing whitespace after ':'
+py:40:13: E231 missing whitespace after ':'
+py:41:10: E231 missing whitespace after ':'
+py:41:13: E231 missing whitespace after ':'
+py:42:10: E231 missing whitespace after ':'
+py:42:13: E231 missing whitespace after ':'
+py:42:36: E211 whitespace before '('
+py:43:14: E231 missing whitespace after ':'
+py:43:17: E231 missing whitespace after ':'
+py:44:14: E231 missing whitespace after ':'
+py:44:17: E231 missing whitespace after ':'
+py:44:40: E211 whitespace before '('
+py:45:14: E231 missing whitespace after ':'
+py:45:17: E231 missing whitespace after ':'
+py:45:46: E211 whitespace before '('
+py:46:25: E231 missing whitespace after ':'
+py:46:27: E231 missing whitespace after ':'
+py:47:25: E231 missing whitespace after ':'
+py:47:27: E231 missing whitespace after ':'
+py:48:22: E231 missing whitespace after ':'
+py:48:25: E231 missing whitespace after ':'
+py:48:80: E501 line too long (85 > 79 characters)
+py:49:22: E231 missing whitespace after ':'
+py:49:25: E231 missing whitespace after ':'
+py:49:80: E501 line too long (85 > 79 characters)
+py:50:20: E231 missing whitespace after ':'
+py:50:23: E231 missing whitespace after ':'
+py:51:20: E231 missing whitespace after ':'
+py:51:23: E231 missing whitespace after ':'
+py:52:20: E231 missing whitespace after ':'
+py:52:23: E231 missing whitespace after ':'
+py:53:20: E231 missing whitespace after ':'
+py:53:23: E231 missing whitespace after ':'
+py:53:52: E211 whitespace before '('
+py:54:20: E231 missing whitespace after ':'
+py:54:23: E231 missing whitespace after ':'
+py:55:20: E231 missing whitespace after ':'
+py:55:23: E231 missing whitespace after ':'
+py:56:26: E231 missing whitespace after ':'
+py:56:29: E231 missing whitespace after ':'
+py:56:52: E211 whitespace before '('
+py:57:26: E231 missing whitespace after ':'
+py:57:29: E231 missing whitespace after ':'
+py:57:52: E211 whitespace before '('
+py:58:26: E231 missing whitespace after ':'
+py:58:29: E231 missing whitespace after ':'
+py:59:26: E231 missing whitespace after ':'
+py:59:29: E231 missing whitespace after ':'
+py:60:26: E231 missing whitespace after ':'
+py:60:29: E231 missing whitespace after ':'
+py:61:26: E231 missing whitespace after ':'
+py:61:29: E231 missing whitespace after ':'
+py:62:26: E231 missing whitespace after ':'
+py:62:29: E231 missing whitespace after ':'
+py:63:26: E231 missing whitespace after ':'
+py:63:29: E231 missing whitespace after ':'
+py:63:52: E211 whitespace before '('
+py:64:26: E231 missing whitespace after ':'
+py:64:29: E231 missing whitespace after ':'
+py:65:26: E231 missing whitespace after ':'
+py:65:29: E231 missing whitespace after ':'
+py:65:52: E211 whitespace before '('
+py:66:26: E231 missing whitespace after ':'
+py:66:29: E231 missing whitespace after ':'
+py:67:26: E231 missing whitespace after ':'
+py:67:29: E231 missing whitespace after ':'
+py:68:26: E231 missing whitespace after ':'
+py:68:29: E231 missing whitespace after ':'
+py:69:26: E231 missing whitespace after ':'
+py:69:29: E231 missing whitespace after ':'
+py:70:26: E231 missing whitespace after ':'
+py:70:29: E231 missing whitespace after ':'
+py:70:52: E211 whitespace before '('
+py:71:26: E231 missing whitespace after ':'
+py:71:29: E231 missing whitespace after ':'
+py:71:52: E211 whitespace before '('
+py:72:26: E231 missing whitespace after ':'
+py:72:29: E231 missing whitespace after ':'
+py:73:26: E231 missing whitespace after ':'
+py:73:29: E231 missing whitespace after ':'
+py:74:26: E231 missing whitespace after ':'
+py:74:29: E231 missing whitespace after ':'
+py:75:26: E231 missing whitespace after ':'
+py:75:29: E231 missing whitespace after ':'
+py:76:11: E231 missing whitespace after ':'
+py:76:14: E231 missing whitespace after ':'
+py:77:10: E231 missing whitespace after ':'
+py:77:13: E231 missing whitespace after ':'
+py:78:10: E231 missing whitespace after ':'
+py:78:13: E231 missing whitespace after ':'
+py:78:36: E211 whitespace before '('
+py:79:10: E231 missing whitespace after ':'
+py:79:13: E231 missing whitespace after ':'
+py:79:36: E211 whitespace before '('
+py:80:15: E231 missing whitespace after ':'
+py:80:19: E231 missing whitespace after ':'
+py:80:80: E501 line too long (84 > 79 characters)
+py:81:15: E231 missing whitespace after ':'
+py:81:19: E231 missing whitespace after ':'
+requirements.txt:1:6: E225 missing whitespace around operator
+requirements.txt:2:11: E225 missing whitespace around operator
+requirements.txt:3:7: E225 missing whitespace around operator
+requirements.txt:4:9: E225 missing whitespace around operator
+requirements.txt:5:12: E225 missing whitespace around operator
