@@ -17,7 +17,7 @@ app.register_blueprint(app_views)
 CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
 auth = None
 
-AUTH_TYPE = os.getenv("AUTH_TYPE")
+AUTH_TYPE = os.getenv("AUTH_TYPE")  # Determines the type of authentication to use
 
 
 if AUTH_TYPE == "auth":
@@ -47,7 +47,7 @@ def not_found(error) -> str:
 
 @app.errorhandler(401)
 def unauthorized_error(error) -> str:
-    """ unauthorized handler
+    """ unauthorized error handler
     """
     return jsonify({"error": "Unauthorized"}), 401
 
@@ -64,6 +64,12 @@ def before_request():
     """
     Execute before each request to filter requests based
     on authentication requirements.
+    - If 'auth' is None, skips authentication.
+    - checks if the requested path is in 'excluded_paths'.
+      If yes, slips authentication.
+    - verifies the presence of Authorization header. 
+    If missing, aborts with a 401
+    - verifies the current user. If None, aborts witha 403 error
     """
     print(f"Processing request path: {request.path}")
 
