@@ -32,7 +32,7 @@ else:
     auth = None
 
 print(f"AUTH_TYPE: {AUTH_TYPE}")  # Debugging print to check AUTH_TYPE
-print(f"Auth instance: {type(auth)}")
+print(f"Auth instance: {type(auth)}")  # Debugging
 
 excluded_paths = ['/api/v1/status/', '/api/v1/unauthorized/',
                   '/api/v1/forbidden/']
