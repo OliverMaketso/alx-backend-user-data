@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """
 Route module for the API
+
+This module initializes a Flask application, sets up authentication, error handling,
+and route filtering based on authentication requirements.
 """
 import os
+from typing import Optional, Any
+from os import getenv
 from flask import Flask, jsonify, abort, request
 from flask_cors import (CORS, cross_origin)
-from os import getenv
 from api.v1.views import app_views
 from api.v1.auth.auth import Auth
 from api.v1.auth.basic_auth import BasicAuth
@@ -15,11 +19,12 @@ from api.v1.auth import auth
 app = Flask(__name__)
 app.register_blueprint(app_views)
 CORS(app, resources={r"/api/v1/*": {"origins": "*"}})
-auth = None
 
-AUTH_TYPE = os.getenv("AUTH_TYPE")  # Determines the type of authentication to use
+auth: Optional[Auth] = None  #Authentication handler instance
+AUTH_TYPE: Optional[str]= os.getenv("AUTH_TYPE")  # Determines the type of authentication to use
 
 
+# Set up the appropruate authentication handler based on AUTH_TYPE
 if AUTH_TYPE == "auth":
     from api.v1.auth.auth import Auth
     auth = Auth()
@@ -33,8 +38,8 @@ elif AUTH_TYPE == "session_auth":
     auth = SessionAuth()
 
 
-print(f"AUTH_TYPE: {AUTH_TYPE}")  # Debugging print to check AUTH_TYPE
-print(f"Auth instance: {type(auth)}")  # Debugging
+# print(f"AUTH_TYPE: {AUTH_TYPE}")  # Debugging print to check AUTH_TYPE
+# print(f"Auth instance: {type(auth)}")  # Debugging
 
 excluded_paths = ['/api/v1/status/', '/api/v1/unauthorized/',
                   '/api/v1/forbidden/', '/api/v1/auth_session/login/']
@@ -42,27 +47,27 @@ excluded_paths = ['/api/v1/status/', '/api/v1/unauthorized/',
 
 @app.errorhandler(404)
 def not_found(error) -> str:
-    """ Not found handler
+    """ Handler for 404 Not found handler
     """
     return jsonify({"error": "Not found"}), 404
 
 
 @app.errorhandler(401)
 def unauthorized_error(error) -> str:
-    """ unauthorized error handler
+    """ Handler for 401 unauthorized error handler
     """
     return jsonify({"error": "Unauthorized"}), 401
 
 
 @app.errorhandler(403)
 def forbidden_error(error) -> str:
-    """Forbidden error handler
+    """Handler for 403 Forbidden error handler
     """
     return jsonify({"error": "Forbidden"}), 403
 
 
 @app.before_request
-def before_request():
+def before_request() -> Optional[Any]:
     """
     Execute before each request to filter requests based
     on authentication requirements.
@@ -90,7 +95,7 @@ def before_request():
         print("Authorization header is missing, aborting with 401.")
         abort(401)
 
-    
+
     if auth.session_cookie(request) is None:
         abort(401)
 
