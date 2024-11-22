@@ -2,7 +2,7 @@
 """
 Authentication module
 """
-from sqlalchemy.orm.exc import NoResultFound
+from sqlalchemy.exc import NoResultFound
 import bcrypt
 from db import DB
 from user import User
