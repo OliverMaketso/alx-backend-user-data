@@ -75,14 +75,16 @@ def logout():
 def profile():
     """
     Profile endpoint that returns the user's email if the session ID is valid.
-    
-    The request is expected to contain a 'session_id' cookie. The function uses this 
-    session ID to find the user. If the session is valid and the user exists, it returns 
-    the user's email in the JSON response with a 200 HTTP status. If the session ID is invalid 
+    The request is expected to contain a 'session_id' cookie. The function
+    uses this
+    session ID to find the user. If the session is valid and the user
+    exists, it returns
+    the user's email in the JSON response with a 200 HTTP status.
+    If the session ID is invalid
     or the user does not exist, it responds with a 403 Forbidden status.
-    
     Returns:
-        tuple: A tuple containing a JSON response with the user's email and a status code.
+        tuple: A tuple containing a JSON response with the
+        user's email and a status code.
     """
     session_id = request.cookies.get('session_id')
     user = AUTH.get_user_from_session_id(session_id)
@@ -90,6 +92,7 @@ def profile():
         return jsonify({"email": user.email}), 200
     else:
         abort(403)
+
 
 @app.route("/reset_password", methods=["POST"], strict_slashes=False)
 def get_reset_password_token():
@@ -114,6 +117,7 @@ def update_password():
     except ValueError:
         abort(403)
     return jsonify({"email": email, "message": "Password updated"})
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port="5000", debug=True)
