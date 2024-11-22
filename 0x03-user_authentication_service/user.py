@@ -5,7 +5,7 @@ This module defines a 'User' class mapped to the users table,
 which represents the user data.
 """
 import sqlalchemy
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 # Base class for defining ORM models
