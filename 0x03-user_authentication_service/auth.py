@@ -124,7 +124,8 @@ class Auth:
 
     def get_user_from_session_id(self, session_id: str) -> User:
         """
-        Retrieves the user associated with a given session ID from the database.
+        Retrieves the user associated with a given session ID from
+        the database.
 
         Args:
             session_id (str): The session ID to search for.
@@ -134,7 +135,8 @@ class Auth:
             None: If no user is found or if the session_id is None.
 
         Raises:
-            NoResultFound: If the database query doesn't find any matching user.
+            NoResultFound: If the database query doesn't find any
+            matching user.
         """
         if session_id is None:
             return None
@@ -147,7 +149,6 @@ class Auth:
         except NoResultFound:
             return None
 
-
     def destroy_session(self, user_id: str) -> None:
         """
         Destroys session
@@ -155,7 +156,7 @@ class Auth:
         if user_id:
             self._db.update_user(user_id, session_id=None)
         return None
-    
+
     def get_reset_password_token(self, email: str) -> str:
         """Generates reset password token for valid user"""
         try:
